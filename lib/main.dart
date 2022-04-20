@@ -133,11 +133,15 @@ class ScreenShot extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 37),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
               DropdownButton<String>(
                 value: dropdownValue,
                 icon: const Icon(Icons.arrow_downward),
                 elevation: 16,
-                style: const TextStyle(color: Colors.deepPurple),
+                style: const TextStyle( color: Color(0xff000000),
+                      fontWeight: FontWeight.w500),
                 underline: Container(
                   height: 2,
                   color: Colors.deepPurpleAccent,
@@ -151,6 +155,11 @@ class ScreenShot extends StatelessWidget {
                   );
                 }).toList(),
               ),
+                   Icon(
+                    Icons.heart_broken_outlined,
+                    color: Color(0xff333333),
+                  ),
+                ],
             ],
           ),
         ),
